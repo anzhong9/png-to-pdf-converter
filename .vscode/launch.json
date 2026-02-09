@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PngFolderToPdfConverter",
+            "request": "launch",
+            "mainClass": "com.travelport.converter.PngFolderToPdfConverter",
+            "projectName": "png-to-pdf-converter"
+        },
+        {
+            "type": "java",
             "name": "Run PNG to PDF Converter",
             "request": "launch",
             "mainClass": "com.travelport.converter.PngToPdfBatchConverter",
