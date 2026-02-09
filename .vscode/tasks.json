@@ -1,0 +1,69 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Maven: Clean",
+            "type": "shell",
+            "command": "mvn clean",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Maven: Compile",
+            "type": "shell",
+            "command": "mvn compile",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$maven"
+            ]
+        },
+        {
+            "label": "Maven: Package",
+            "type": "shell",
+            "command": "mvn package",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$maven"
+            ]
+        },
+        {
+            "label": "Maven: Clean and Package",
+            "type": "shell",
+            "command": "mvn clean package",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$maven"
+            ]
+        },
+        {
+            "label": "Run JAR",
+            "type": "shell",
+            "command": "java -jar target/png-to-pdf-converter-1.0.0-jar-with-dependencies.jar",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
